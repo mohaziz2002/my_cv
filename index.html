@@ -61,10 +61,10 @@
         <section id="about" class="pt-24 pb-16">
              <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
                 <div class="flex-shrink-0">
-                    <img src="photo.jpg"alt="صورة محمد زكي الشخصية" class="w-48 h-48 rounded-full object-cover border-4 border-red-200 shadow-xl">
+                    <img src="photo.jpg" alt="صورة محمد زكي الشخصية" class="w-48 h-48 rounded-full object-cover border-4 border-red-200 shadow-xl">
                 </div>
                 <div class="text-center md:text-right mt-6 md:mt-0">
-                    <h1 class="text-4xl md:text-5xl font-bold text-red-700 mb-4">محمد زكي عبدالعزيز</h1>
+                    <h1 class="text-4xl md:text-5xl font-bold text-red-700 mb-4">محمد زكي</h1>
                     <p class="text-lg text-gray-600 mb-3">طالب هندسة كمبيوتر، المستوى الثالث</p>
                     <p class="font-semibold text-red-800 bg-red-100 rounded-full inline-block px-6 py-2">مرشح للجنة الرقابة والتقييم، اتحاد الطلاب اليمنيين في تركيا - فرع كارابوك</p>
                 </div>
@@ -104,7 +104,7 @@
     
     <footer class="bg-white mt-16 py-6 border-t">
         <div class="container mx-auto px-6 text-center text-gray-500">
-            <p>&copy; MOHAMMED AZIZ</p>
+            <p>&copy; 2025  MOHAMMED AZIZ.</p>
         </div>
     </footer>
 
@@ -126,19 +126,21 @@
             const skillsData = [
                 { category: 'لغات', title: 'دبلوم في اللغة الإنجليزية', source: 'معهد مالي' },
                 { category: 'لغات', title: 'دبلوم في اللغة التركية', source: 'جامعة سكاريا للعلوم التطبيقية' },
-                { category: 'تقني', title: 'دبلوم الرخصة الدولية للحاسوب', source: 'جامعة العلوم والتكنولوجيا' },
+                { category: 'تقني', title: 'دبلوم في الرخصة الدولية لقيادة الحاسوب', source: 'جامعة العلوم والتكنولوجيا' },
                 { category: 'إنساني', title: 'دورة في الإسعافات الأولية', source: 'معهد ليدرشيب' },
-                { category: 'إداري', title: 'إدارة الكوارث (برنامج اسفير)', source: 'معهد ليدرشيب' },
+                { category: 'إنساني', title: 'إدارة الكوارث (برنامج اسفير)', source: 'معهد ليدرشيب' },
                 { category: 'إداري', title: 'دورة في التسويق الإلكتروني', source: 'اتحاد الطلاب اليمنيين، اسطنبول' },
-                { category: 'إداري', title: 'دورة في إدارة المشاريع الصغيرة', source: 'معهد ليدرشيب' }
+                { category: 'إداري', title: 'دورة في إدارة المشاريع الصغيرة', source: 'معهد ليدرشيب' },
+                { category: 'إنساني', title: 'تدريب عملي في الاسعافات الاولية', source: 'معهد عالمنا الجديد' },
+                
             ];
             
             const experienceContainer = document.querySelector('.experience-data');
             experienceData.forEach(item => {
                 const div = document.createElement('div');
-                div.className = 'timeline-item mb-8 mr-8 pl-4 relative';
+                div.className = 'timeline-item mb-8 mr-32 pl-4 relative';
                 div.innerHTML = `
-                    <div class="absolute -right-12 top-2 text-sm font-semibold text-red-600 bg-red-100 rounded-md px-2 py-1">${item.year}</div>
+                    <div class="absolute -right-28 top-2 text-sm font-semibold text-red-600 bg-red-100 rounded-md px-2 py-1">${item.year}</div>
                     <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-200">
                         <h3 class="text-lg font-semibold text-gray-800">${item.title}</h3>
                         <p class="text-sm text-gray-500">${item.org}</p>
@@ -179,10 +181,10 @@
                         label: 'تصنيف المهارات',
                         data: Object.values(skillCategories),
                         backgroundColor: [
-                            '#b91c1c',
-                            '#dc2626',
-                            '#ef4444',
-                            '#f87171'
+                            '#4A90E2',
+                            '#F5A623',
+                            '#50E3C2',
+                            '#7ED321'
                         ],
                         borderColor: '#f9fafb',
                         borderWidth: 3
